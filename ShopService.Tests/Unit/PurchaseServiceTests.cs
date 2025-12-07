@@ -19,15 +19,12 @@ public class PurchaseServiceTests
         var mediatorMock = new Mock<IMediator>();
         var metricsMock = new Mock<IMetricService>();
 
-        // метрика должна возвращать IDisposable
         var timerMock = new Mock<IDisposable>();
         metricsMock.Setup(m => m.BeginPurchaseTimer())
             .Returns(timerMock.Object);
-
-        // входящие id
+        
         var ids = new[] { Guid.NewGuid(), Guid.NewGuid() };
 
-        // создаём Purchase, который вернёт репозиторий
         var purchase = new Purchase
         (
             id: Guid.NewGuid(),
