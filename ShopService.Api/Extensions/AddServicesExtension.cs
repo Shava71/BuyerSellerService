@@ -32,6 +32,7 @@ public static class AddServicesExtension
         services.AddScoped<IStatsService, StatsService>();
         services.AddScoped<ISellerService, SellerService>();
         services.AddScoped<IPurchaseService, PurchaseService>();
+        services.AddScoped<IMetricService, MetricService>();
         
         return services;
     }

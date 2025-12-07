@@ -3,6 +3,7 @@ using FluentValidation;
 using FluentValidation.AspNetCore;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.OpenApi.Models;
+using Prometheus;
 using ShopService.Api.Extensions;
 using ShopService.Application.Validation;
 using ShopService.Infrastructure.Data;
@@ -56,6 +57,9 @@ app.UseSwaggerUI(c =>
 });
 
 app.MapControllers();
+
+app.UseMetricServer();
+app.UseHttpMetrics();
 
 using (var scope = app.Services.CreateScope())
 {
