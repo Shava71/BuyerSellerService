@@ -57,11 +57,19 @@ ShopService
 
 ---
 
+## Unit Tests
+В проекте есть тесты для ```PurchaseService``` (проверка сервиса покупки и публикации событий)
+```
+[Fact]
+public async Task Purchase_Publishes_Event_And_UsesRepo
+```
+
 ## Метрики Prometheus
 Метрики доступны по ```GET /metrics```
 
-Пример метрик в Grafana:
+### Пример метрик в Grafana:
 ![Grafana](docs/metrics.jpg)
+
 ---
 
 ## Запуск проекта в Docker
