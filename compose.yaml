@@ -1,0 +1,39 @@
+﻿services:
+  shopservice.api:
+    image: shopservice.api
+    build:
+      context: .
+      dockerfile: ShopService.Api/Dockerfile
+    ports:
+      - "8086:8080"
+    depends_on:
+      db:
+        condition: service_healthy
+    networks:
+      - backend
+  
+  db:
+    image: postgres:latest
+    container_name: db
+    environment:
+      POSTGRES_USER: user
+      POSTGRES_PASSWORD: pass
+      POSTGRES_DB: db
+    ports:
+      - "5432:5432"
+    volumes:
+      - postgres_data_processor:/var/lib/postgresql
+    healthcheck:
+      test: [ "CMD-SHELL", "pg_isready -U user -d db" ]
+      interval: 5s
+      timeout: 3s
+      retries: 5
+      start_period: 10s
+    networks:
+      - backend
+
+volumes:
+  postgres_data_processor:
+
+networks:
+  backend: 

@@ -1,0 +1,14 @@
+/Users/mac/Desktop/erikov/ShopService/ShopService.Domain/bin/Debug/net9.0/ShopService.Domain.deps.json
+/Users/mac/Desktop/erikov/ShopService/ShopService.Domain/bin/Debug/net9.0/ShopService.Domain.runtimeconfig.json
+/Users/mac/Desktop/erikov/ShopService/ShopService.Domain/bin/Debug/net9.0/ShopService.Domain.dll
+/Users/mac/Desktop/erikov/ShopService/ShopService.Domain/bin/Debug/net9.0/ShopService.Domain.pdb
+/Users/mac/Desktop/erikov/ShopService/ShopService.Domain/obj/Debug/net9.0/ShopService.Domain.csproj.AssemblyReference.cache
+/Users/mac/Desktop/erikov/ShopService/ShopService.Domain/obj/Debug/net9.0/ShopService.Domain.GeneratedMSBuildEditorConfig.editorconfig
+/Users/mac/Desktop/erikov/ShopService/ShopService.Domain/obj/Debug/net9.0/ShopService.Domain.AssemblyInfoInputs.cache
+/Users/mac/Desktop/erikov/ShopService/ShopService.Domain/obj/Debug/net9.0/ShopService.Domain.AssemblyInfo.cs
+/Users/mac/Desktop/erikov/ShopService/ShopService.Domain/obj/Debug/net9.0/ShopService.Domain.csproj.CoreCompileInputs.cache
+/Users/mac/Desktop/erikov/ShopService/ShopService.Domain/obj/Debug/net9.0/ShopService.Domain.dll
+/Users/mac/Desktop/erikov/ShopService/ShopService.Domain/obj/Debug/net9.0/refint/ShopService.Domain.dll
+/Users/mac/Desktop/erikov/ShopService/ShopService.Domain/obj/Debug/net9.0/ShopService.Domain.pdb
+/Users/mac/Desktop/erikov/ShopService/ShopService.Domain/obj/Debug/net9.0/ShopService.Domain.genruntimeconfig.cache
+/Users/mac/Desktop/erikov/ShopService/ShopService.Domain/obj/Debug/net9.0/ref/ShopService.Domain.dll

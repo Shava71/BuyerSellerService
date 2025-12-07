@@ -1,0 +1,17 @@
+/Users/mac/Desktop/erikov/ShopService/ShopService.Infrastructure/bin/Debug/net9.0/ShopService.Infrastructure.deps.json
+/Users/mac/Desktop/erikov/ShopService/ShopService.Infrastructure/bin/Debug/net9.0/ShopService.Infrastructure.runtimeconfig.json
+/Users/mac/Desktop/erikov/ShopService/ShopService.Infrastructure/bin/Debug/net9.0/ShopService.Infrastructure.dll
+/Users/mac/Desktop/erikov/ShopService/ShopService.Infrastructure/bin/Debug/net9.0/ShopService.Infrastructure.pdb
+/Users/mac/Desktop/erikov/ShopService/ShopService.Infrastructure/bin/Debug/net9.0/ShopService.Domain.dll
+/Users/mac/Desktop/erikov/ShopService/ShopService.Infrastructure/bin/Debug/net9.0/ShopService.Domain.pdb
+/Users/mac/Desktop/erikov/ShopService/ShopService.Infrastructure/obj/Debug/net9.0/ShopService.Infrastructure.csproj.AssemblyReference.cache
+/Users/mac/Desktop/erikov/ShopService/ShopService.Infrastructure/obj/Debug/net9.0/ShopService.Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
+/Users/mac/Desktop/erikov/ShopService/ShopService.Infrastructure/obj/Debug/net9.0/ShopService.Infrastructure.AssemblyInfoInputs.cache
+/Users/mac/Desktop/erikov/ShopService/ShopService.Infrastructure/obj/Debug/net9.0/ShopService.Infrastructure.AssemblyInfo.cs
+/Users/mac/Desktop/erikov/ShopService/ShopService.Infrastructure/obj/Debug/net9.0/ShopService.Infrastructure.csproj.CoreCompileInputs.cache
+/Users/mac/Desktop/erikov/ShopService/ShopService.Infrastructure/obj/Debug/net9.0/ShopServ.3D502CC7.Up2Date
+/Users/mac/Desktop/erikov/ShopService/ShopService.Infrastructure/obj/Debug/net9.0/ShopService.Infrastructure.dll
+/Users/mac/Desktop/erikov/ShopService/ShopService.Infrastructure/obj/Debug/net9.0/refint/ShopService.Infrastructure.dll
+/Users/mac/Desktop/erikov/ShopService/ShopService.Infrastructure/obj/Debug/net9.0/ShopService.Infrastructure.pdb
+/Users/mac/Desktop/erikov/ShopService/ShopService.Infrastructure/obj/Debug/net9.0/ShopService.Infrastructure.genruntimeconfig.cache
+/Users/mac/Desktop/erikov/ShopService/ShopService.Infrastructure/obj/Debug/net9.0/ref/ShopService.Infrastructure.dll
