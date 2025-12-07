@@ -9,19 +9,38 @@
       "ShopService.Tests/1.0.0": {
         "dependencies": {
           "Dapper": "2.1.66",
+          "FluentValidation": "12.1.1",
+          "FluentValidation.AspNetCore": "11.3.1",
+          "FluentValidation.DependencyInjectionExtensions": "12.1.1",
           "MediatR": "14.0.0",
           "Microsoft.EntityFrameworkCore": "9.0.11",
           "Microsoft.EntityFrameworkCore.Design": "9.0.11",
           "Microsoft.Extensions.Options": "9.0.11",
           "Microsoft.NET.Test.Sdk": "17.12.0",
+          "Moq": "4.20.72",
           "Npgsql.EntityFrameworkCore.PostgreSQL": "9.0.4",
+          "ShopService.Application": "1.0.0",
+          "ShopService.Domain": "1.0.0",
           "Swashbuckle.AspNetCore": "9.0.6",
           "coverlet.collector": "6.0.2",
+          "prometheus-net": "8.2.1",
+          "prometheus-net.AspNetCore": "8.2.1",
           "xunit": "2.9.2",
           "xunit.runner.visualstudio": "2.8.2"
         },
         "runtime": {
           "ShopService.Tests.dll": {}
+        }
+      },
+      "Castle.Core/5.1.1": {
+        "dependencies": {
+          "System.Diagnostics.EventLog": "6.0.0"
+        },
+        "runtime": {
+          "lib/net6.0/Castle.Core.dll": {
+            "assemblyVersion": "5.0.0.0",
+            "fileVersion": "5.1.1.0"
+          }
         }
       },
       "coverlet.collector/6.0.2": {},
@@ -30,6 +49,38 @@
           "lib/net8.0/Dapper.dll": {
             "assemblyVersion": "2.0.0.0",
             "fileVersion": "2.1.66.48463"
+          }
+        }
+      },
+      "FluentValidation/12.1.1": {
+        "runtime": {
+          "lib/net8.0/FluentValidation.dll": {
+            "assemblyVersion": "12.0.0.0",
+            "fileVersion": "12.1.1.0"
+          }
+        }
+      },
+      "FluentValidation.AspNetCore/11.3.1": {
+        "dependencies": {
+          "FluentValidation": "12.1.1",
+          "FluentValidation.DependencyInjectionExtensions": "12.1.1"
+        },
+        "runtime": {
+          "lib/net6.0/FluentValidation.AspNetCore.dll": {
+            "assemblyVersion": "11.0.0.0",
+            "fileVersion": "11.3.1.0"
+          }
+        }
+      },
+      "FluentValidation.DependencyInjectionExtensions/12.1.1": {
+        "dependencies": {
+          "FluentValidation": "12.1.1",
+          "Microsoft.Extensions.DependencyInjection.Abstractions": "10.0.0"
+        },
+        "runtime": {
+          "lib/net8.0/FluentValidation.DependencyInjectionExtensions.dll": {
+            "assemblyVersion": "12.0.0.0",
+            "fileVersion": "12.1.1.0"
           }
         }
       },
@@ -492,6 +543,13 @@
           }
         }
       },
+      "Microsoft.Extensions.Http/3.1.0": {
+        "dependencies": {
+          "Microsoft.Extensions.DependencyInjection.Abstractions": "10.0.0",
+          "Microsoft.Extensions.Logging": "9.0.11",
+          "Microsoft.Extensions.Options": "9.0.11"
+        }
+      },
       "Microsoft.Extensions.Logging/9.0.11": {
         "dependencies": {
           "Microsoft.Extensions.DependencyInjection": "9.0.11",
@@ -517,6 +575,7 @@
           }
         }
       },
+      "Microsoft.Extensions.ObjectPool/7.0.0": {},
       "Microsoft.Extensions.Options/9.0.11": {
         "dependencies": {
           "Microsoft.Extensions.DependencyInjection.Abstractions": "10.0.0",
@@ -850,6 +909,17 @@
           }
         }
       },
+      "Moq/4.20.72": {
+        "dependencies": {
+          "Castle.Core": "5.1.1"
+        },
+        "runtime": {
+          "lib/net6.0/Moq.dll": {
+            "assemblyVersion": "4.20.72.0",
+            "fileVersion": "4.20.72.0"
+          }
+        }
+      },
       "Newtonsoft.Json/13.0.1": {
         "runtime": {
           "lib/netstandard2.0/Newtonsoft.Json.dll": {
@@ -879,6 +949,29 @@
           "lib/net8.0/Npgsql.EntityFrameworkCore.PostgreSQL.dll": {
             "assemblyVersion": "9.0.4.0",
             "fileVersion": "9.0.4.0"
+          }
+        }
+      },
+      "prometheus-net/8.2.1": {
+        "dependencies": {
+          "Microsoft.Extensions.Http": "3.1.0",
+          "Microsoft.Extensions.ObjectPool": "7.0.0"
+        },
+        "runtime": {
+          "lib/net7.0/Prometheus.NetStandard.dll": {
+            "assemblyVersion": "8.0.0.0",
+            "fileVersion": "8.2.1.0"
+          }
+        }
+      },
+      "prometheus-net.AspNetCore/8.2.1": {
+        "dependencies": {
+          "prometheus-net": "8.2.1"
+        },
+        "runtime": {
+          "lib/net6.0/Prometheus.AspNetCore.dll": {
+            "assemblyVersion": "8.0.0.0",
+            "fileVersion": "8.2.1.0"
           }
         }
       },
@@ -997,6 +1090,7 @@
           }
         }
       },
+      "System.Diagnostics.EventLog/6.0.0": {},
       "System.IO.Pipelines/7.0.0": {},
       "System.Reflection.Metadata/7.0.0": {
         "dependencies": {
@@ -1065,7 +1159,73 @@
           }
         }
       },
-      "xunit.runner.visualstudio/2.8.2": {}
+      "xunit.runner.visualstudio/2.8.2": {},
+      "ShopService.Application/1.0.0": {
+        "dependencies": {
+          "Dapper": "2.1.66",
+          "FluentValidation": "12.1.1",
+          "FluentValidation.AspNetCore": "11.3.1",
+          "FluentValidation.DependencyInjectionExtensions": "12.1.1",
+          "MediatR": "14.0.0",
+          "Microsoft.EntityFrameworkCore": "9.0.11",
+          "Microsoft.Extensions.Options": "9.0.11",
+          "Npgsql.EntityFrameworkCore.PostgreSQL": "9.0.4",
+          "ShopService.Domain": "1.0.0",
+          "ShopService.Infrastructure": "1.0.0",
+          "Swashbuckle.AspNetCore": "9.0.6",
+          "prometheus-net": "8.2.1",
+          "prometheus-net.AspNetCore": "8.2.1"
+        },
+        "runtime": {
+          "ShopService.Application.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
+      "ShopService.Domain/1.0.0": {
+        "dependencies": {
+          "Dapper": "2.1.66",
+          "FluentValidation": "12.1.1",
+          "FluentValidation.AspNetCore": "11.3.1",
+          "FluentValidation.DependencyInjectionExtensions": "12.1.1",
+          "MediatR": "14.0.0",
+          "Microsoft.EntityFrameworkCore": "9.0.11",
+          "Microsoft.Extensions.Options": "9.0.11",
+          "Npgsql.EntityFrameworkCore.PostgreSQL": "9.0.4",
+          "Swashbuckle.AspNetCore": "9.0.6",
+          "prometheus-net": "8.2.1",
+          "prometheus-net.AspNetCore": "8.2.1"
+        },
+        "runtime": {
+          "ShopService.Domain.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
+      "ShopService.Infrastructure/1.0.0": {
+        "dependencies": {
+          "Dapper": "2.1.66",
+          "FluentValidation": "12.1.1",
+          "FluentValidation.AspNetCore": "11.3.1",
+          "FluentValidation.DependencyInjectionExtensions": "12.1.1",
+          "MediatR": "14.0.0",
+          "Microsoft.EntityFrameworkCore": "9.0.11",
+          "Microsoft.Extensions.Options": "9.0.11",
+          "Npgsql.EntityFrameworkCore.PostgreSQL": "9.0.4",
+          "ShopService.Domain": "1.0.0",
+          "Swashbuckle.AspNetCore": "9.0.6",
+          "prometheus-net": "8.2.1",
+          "prometheus-net.AspNetCore": "8.2.1"
+        },
+        "runtime": {
+          "ShopService.Infrastructure.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      }
     }
   },
   "libraries": {
@@ -1073,6 +1233,13 @@
       "type": "project",
       "serviceable": false,
       "sha512": ""
+    },
+    "Castle.Core/5.1.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-rpYtIczkzGpf+EkZgDr9CClTdemhsrwA/W5hMoPjLkRFnXzH44zDLoovXeKtmxb1ykXK9aJVODSpiJml8CTw2g==",
+      "path": "castle.core/5.1.1",
+      "hashPath": "castle.core.5.1.1.nupkg.sha512"
     },
     "coverlet.collector/6.0.2": {
       "type": "package",
@@ -1087,6 +1254,27 @@
       "sha512": "sha512-/q77jUgDOS+bzkmk3Vy9SiWMaetTw+NOoPAV0xPBsGVAyljd5S6P+4RUW7R3ZUGGr9lDRyPKgAMj2UAOwvqZYw==",
       "path": "dapper/2.1.66",
       "hashPath": "dapper.2.1.66.nupkg.sha512"
+    },
+    "FluentValidation/12.1.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-EPpkIe1yh1a0OXyC100oOA8WMbZvqUu5plwhvYcb7oSELfyUZzfxV48BLhvs3kKo4NwG7MGLNgy1RJiYtT8Dpw==",
+      "path": "fluentvalidation/12.1.1",
+      "hashPath": "fluentvalidation.12.1.1.nupkg.sha512"
+    },
+    "FluentValidation.AspNetCore/11.3.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-FjkfrGGwC+25oH8QpX1ti3gxkFjDDtotkAQWyQz2CkwQwEfRKTANjhh77I79kY8dov2ydK1SY+e4jiOWsbbDdQ==",
+      "path": "fluentvalidation.aspnetcore/11.3.1",
+      "hashPath": "fluentvalidation.aspnetcore.11.3.1.nupkg.sha512"
+    },
+    "FluentValidation.DependencyInjectionExtensions/12.1.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-D0VXh4dtjjX2aQizuaa0g6R8X3U1JaVqJPfGCvLwZX9t/O2h7tkpbitbadQMfwcgSPdDbI2vDxuwRMv/Uf9dHA==",
+      "path": "fluentvalidation.dependencyinjectionextensions/12.1.1",
+      "hashPath": "fluentvalidation.dependencyinjectionextensions.12.1.1.nupkg.sha512"
     },
     "Humanizer.Core/2.14.1": {
       "type": "package",
@@ -1263,6 +1451,13 @@
       "path": "microsoft.extensions.dependencymodel/9.0.11",
       "hashPath": "microsoft.extensions.dependencymodel.9.0.11.nupkg.sha512"
     },
+    "Microsoft.Extensions.Http/3.1.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-DLigdcV0nYaT6/ly0rnfP80BnXq8NNd/h8/SkfY39uio7Bd9LauVntp6RcRh1Kj23N+uf80GgL7Win6P3BCtoQ==",
+      "path": "microsoft.extensions.http/3.1.0",
+      "hashPath": "microsoft.extensions.http.3.1.0.nupkg.sha512"
+    },
     "Microsoft.Extensions.Logging/9.0.11": {
       "type": "package",
       "serviceable": true,
@@ -1276,6 +1471,13 @@
       "sha512": "sha512-FU/IfjDfwaMuKr414SSQNTIti/69bHEMb+QKrskRb26oVqpx3lNFXMjs/RC9ZUuhBhcwDM2BwOgoMw+PZ+beqQ==",
       "path": "microsoft.extensions.logging.abstractions/10.0.0",
       "hashPath": "microsoft.extensions.logging.abstractions.10.0.0.nupkg.sha512"
+    },
+    "Microsoft.Extensions.ObjectPool/7.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-udvKco0sAVgYGTBnHUb0tY9JQzJ/nPDiv/8PIyz69wl1AibeCDZOLVVI+6156dPfHmJH7ws5oUJRiW4ZmAvuuA==",
+      "path": "microsoft.extensions.objectpool/7.0.0",
+      "hashPath": "microsoft.extensions.objectpool.7.0.0.nupkg.sha512"
     },
     "Microsoft.Extensions.Options/9.0.11": {
       "type": "package",
@@ -1354,6 +1556,13 @@
       "path": "mono.texttemplating/3.0.0",
       "hashPath": "mono.texttemplating.3.0.0.nupkg.sha512"
     },
+    "Moq/4.20.72": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-EA55cjyNn8eTNWrgrdZJH5QLFp2L43oxl1tlkoYUKIE9pRwL784OWiTXeCV5ApS+AMYEAlt7Fo03A2XfouvHmQ==",
+      "path": "moq/4.20.72",
+      "hashPath": "moq.4.20.72.nupkg.sha512"
+    },
     "Newtonsoft.Json/13.0.1": {
       "type": "package",
       "serviceable": true,
@@ -1374,6 +1583,20 @@
       "sha512": "sha512-mw5vcY2IEc7L+IeGrxpp/J5OSnCcjkjAgJYCm/eD52wpZze8zsSifdqV7zXslSMmfJG2iIUGZyo3KuDtEFKwMQ==",
       "path": "npgsql.entityframeworkcore.postgresql/9.0.4",
       "hashPath": "npgsql.entityframeworkcore.postgresql.9.0.4.nupkg.sha512"
+    },
+    "prometheus-net/8.2.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-3wVgdEPOCBF752s2xps5T+VH+c9mJK8S8GKEDg49084P6JZMumTZI5Te6aJ9MQpX0sx7om6JOnBpIi7ZBmmiDQ==",
+      "path": "prometheus-net/8.2.1",
+      "hashPath": "prometheus-net.8.2.1.nupkg.sha512"
+    },
+    "prometheus-net.AspNetCore/8.2.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-/4TfTvbwIDqpaKTiWvEsjUywiHYF9zZvGZF5sK15avoDsUO/WPQbKsF8TiMaesuphdFQPK2z52P0zk6j26V0rQ==",
+      "path": "prometheus-net.aspnetcore/8.2.1",
+      "hashPath": "prometheus-net.aspnetcore.8.2.1.nupkg.sha512"
     },
     "Swashbuckle.AspNetCore/9.0.6": {
       "type": "package",
@@ -1466,6 +1689,13 @@
       "path": "system.diagnostics.diagnosticsource/10.0.0",
       "hashPath": "system.diagnostics.diagnosticsource.10.0.0.nupkg.sha512"
     },
+    "System.Diagnostics.EventLog/6.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-lcyUiXTsETK2ALsZrX+nWuHSIQeazhqPphLfaRxzdGaG93+0kELqpgEHtwWOlQe7+jSFnKwaCAgL4kjeZCQJnw==",
+      "path": "system.diagnostics.eventlog/6.0.0",
+      "hashPath": "system.diagnostics.eventlog.6.0.0.nupkg.sha512"
+    },
     "System.IO.Pipelines/7.0.0": {
       "type": "package",
       "serviceable": true,
@@ -1556,6 +1786,21 @@
       "sha512": "sha512-vm1tbfXhFmjFMUmS4M0J0ASXz3/U5XvXBa6DOQUL3fEz4Vt6YPhv+ESCarx6M6D+9kJkJYZKCNvJMas1+nVfmQ==",
       "path": "xunit.runner.visualstudio/2.8.2",
       "hashPath": "xunit.runner.visualstudio.2.8.2.nupkg.sha512"
+    },
+    "ShopService.Application/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "ShopService.Domain/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "ShopService.Infrastructure/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
     }
   }
 }

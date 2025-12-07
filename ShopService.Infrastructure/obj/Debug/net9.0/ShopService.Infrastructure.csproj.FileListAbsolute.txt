@@ -15,3 +15,4 @@
 /Users/mac/Desktop/erikov/ShopService/ShopService.Infrastructure/obj/Debug/net9.0/ShopService.Infrastructure.pdb
 /Users/mac/Desktop/erikov/ShopService/ShopService.Infrastructure/obj/Debug/net9.0/ShopService.Infrastructure.genruntimeconfig.cache
 /Users/mac/Desktop/erikov/ShopService/ShopService.Infrastructure/obj/Debug/net9.0/ref/ShopService.Infrastructure.dll
+/Users/mac/Desktop/erikov/ShopService/ShopService.Infrastructure/obj/Debug/net9.0/ShopService.Infrastructure.sourcelink.json

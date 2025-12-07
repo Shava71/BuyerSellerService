@@ -12,3 +12,4 @@
 /Users/mac/Desktop/erikov/ShopService/ShopService.Domain/obj/Debug/net9.0/ShopService.Domain.pdb
 /Users/mac/Desktop/erikov/ShopService/ShopService.Domain/obj/Debug/net9.0/ShopService.Domain.genruntimeconfig.cache
 /Users/mac/Desktop/erikov/ShopService/ShopService.Domain/obj/Debug/net9.0/ref/ShopService.Domain.dll
+/Users/mac/Desktop/erikov/ShopService/ShopService.Domain/obj/Debug/net9.0/ShopService.Domain.sourcelink.json
