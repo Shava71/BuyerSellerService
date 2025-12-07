@@ -34,6 +34,27 @@
 
 ---
 
+## API
+
+### SellerController — CRUD для Items
+
+| Метод | Маршрут | Описание | Тело запроса | Ответ |
+|------|---------|----------|--------------|--------|
+| **GET** | `/api/seller/items` | Получить список всех товаров | — | `200 OK` + `Item` |
+| **GET** | `/api/seller/items/{id}` | Получить товар по `id` | — | `200 OK` + `Item` или `404 NotFound` |
+| **POST** | `/api/seller/items/create` | Создать новый товар | `CreateItemDto` | `200 OK` + `Item` |
+| **PUT** | `/api/seller/items/update` | Обновить товар | `UpdateItemDto` | `200 OK` или `400 BadRequest` |
+| **DELETE** | `/api/seller/items/delete/{id}` | Удалить товар | — | `200 OK` |
+
+### BuyerController — Покупки и статистика
+
+| Метод | Маршрут | Описание | Тело запроса | Ответ |
+|------|---------|----------|--------------|--------|
+| **POST** | `/api/buyer/purchase` | Совершить покупку товаров | `PurchaseRequest` | `200 OK` или `400 BadRequest` |
+| **GET** | `/api/buyer/stats` | Получить статистику покупок | — | `200 OK` + `StatsConfig` |
+
+---
+
 ## Архитектура
 ```
 ShopService
