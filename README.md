@@ -1,7 +1,7 @@
 # ShopService — сервис покупок с метриками Prometheus и мониторингом Grafana
 
 Этот проект реализует упрощённый backend-магазин с возможностью создания товаров, совершения покупок, публикацией доменных событий и системой сбора метрик.  
-Сервис построен по принципам **DDD**, **Clean Architecture**, использует **MediatR** для событий, **Prometheus** для метрик и **Grafana** для визуализации.
+Сервис использует IOptionMonitor для хранерия статистики store-information, использует **MediatR** для событий, **Prometheus** для метрик и **Grafana** для визуализации.
 
 ---
 
@@ -11,6 +11,7 @@
 - **Entity Framework Core**
 - **Dapper**
 - **MediatR** — доменные события
+- **IOptionsMonitor** 
 - **Prometheus-net** — метрики
 - **Grafana** — визуализация
 - **Fluent** - валидация
@@ -52,6 +53,20 @@
 |------|---------|----------|--------------|--------|
 | **POST** | `/api/buyer/purchase` | Совершить покупку товаров | `PurchaseRequest` | `200 OK` или `400 BadRequest` |
 | **GET** | `/api/buyer/stats` | Получить статистику покупок | — | `200 OK` + `StatsConfig` |
+
+### Пример хранящейся магазинной информации в IOptionsMonitor:
+```
+curl -X 'GET' \
+  'http://localhost:8086/api/buyer/stats' \
+  -H 'accept: */*'
+
+Response body
+Download
+{
+  "topCategory": "Jewelry",
+  "averagePrice": 750.5
+}
+```
 
 ---
 
